@@ -84,8 +84,8 @@ void create_cell_types( void )
 	cell_defaults.functions.volume_update_function = standard_volume_update_function;
 	cell_defaults.functions.update_velocity = standard_update_cell_velocity;
 
-	// cell_defaults.functions.update_migration_bias = weighted_motility_function; 
-	cell_defaults.functions.update_phenotype = NULL; // update_cell_and_death_parameters_O2_based; 
+	cell_defaults.functions.update_phenotype = update_cell_and_death_parameters_O2_based; 
+
 	cell_defaults.functions.custom_cell_rule = NULL; 
 	
 	cell_defaults.functions.add_cell_basement_membrane_interactions = NULL; 
@@ -102,6 +102,63 @@ void create_cell_types( void )
 	   
 	   This is a good place to set custom functions. 
 	*/ 
+
+    //--- motile/PSM
+	// // Set cell-cell adhesion to 5% of other cells 
+	// motile_cell.phenotype.mechanics.cell_cell_adhesion_strength *= parameters.doubles( "motile_cell_relative_adhesion" ); // 0.05; 
+
+	// // Set cell-cell repulsion 
+	// motile_cell.phenotype.mechanics.cell_cell_repulsion_strength *= parameters.doubles( "motile_cell_relative_repulsion" ); // 0.05; 
+	
+	// // Set apoptosis to zero 
+	// motile_cell.phenotype.death.rates[apoptosis_model_index] = parameters.doubles( "motile_cell_apoptosis_rate" ); // 0.0; 
+
+	// int G0G1_index = flow_cytometry_separated_cycle_model.find_phase_index( PhysiCell_constants::G0G1_phase );
+	// int S_index = flow_cytometry_separated_cycle_model.find_phase_index( PhysiCell_constants::S_phase );
+	// motile_cell.phenotype.cycle.data.transition_rate(G0G1_index,S_index) *= 
+	// parameters.doubles( "motile_cell_relative_cycle_entry_rate" ); // 0.1; 
+
+    //--- Ecto
+    // Ecto_cell.phenotype.motility.is_motile = true; 
+	// Ecto_cell.phenotype.motility.persistence_time = parameters.doubles( "Ecto_cell_persistence_time" ); // 15.0; // 15 minutes
+	// Ecto_cell.phenotype.motility.migration_speed = parameters.doubles( "Ecto_cell_migration_speed" ); // 0.25 micron/minute 
+	// Ecto_cell.phenotype.motility.migration_bias = 0.0;// completely random 
+	
+	// // Set cell-cell adhesion to 5% of other cells 
+	// Ecto_cell.phenotype.mechanics.cell_cell_adhesion_strength *= parameters.doubles( "Ecto_cell_relative_adhesion" ); // 0.05; 
+	
+	// // Set cell-cell repulsion 
+	// Ecto_cell.phenotype.mechanics.cell_cell_repulsion_strength *= parameters.doubles( "Ecto_cell_relative_repulsion" ); // 0.05; 
+    	// Set apoptosis to zero 
+	// Ecto_cell.phenotype.death.rates[apoptosis_model_index] = parameters.doubles( "Ecto_cell_apoptosis_rate" ); // 0.0; 
+	
+	// // Set proliferation to 10% of other cells. 
+	// // Alter the transition rate from G0G1 state to S state
+	// Ecto_cell.phenotype.cycle.data.transition_rate(G0G1_index,S_index) *= 
+	// parameters.doubles( "Ecto_cell_relative_cycle_entry_rate" ); // 0.1; 
+
+
+    //--- NC
+	// enable random motility 
+	// NC_cell.phenotype.motility.is_motile = true; 
+	// NC_cell.phenotype.motility.persistence_time = parameters.doubles( "NC_cell_persistence_time" ); // 15.0; // 15 minutes	
+	// NC_cell.phenotype.motility.migration_speed = parameters.doubles( "NC_cell_migration_speed" ); // 0.25 micron/minute 
+	// NC_cell.phenotype.motility.migration_bias = 0.0;// completely random 
+	
+	// // Set cell-cell adhesion to 5% of other cells 
+	// NC_cell.phenotype.mechanics.cell_cell_adhesion_strength *= parameters.doubles( "NC_cell_relative_adhesion" ); // 0.05; 
+
+	// // Set cell-cell repulsion 
+	// NC_cell.phenotype.mechanics.cell_cell_repulsion_strength *= parameters.doubles( "NC_cell_relative_repulsion" ); // 0.05; 
+		
+	
+	// // Set apoptosis to zero 
+	// NC_cell.phenotype.death.rates[apoptosis_model_index] = parameters.doubles( "NC_cell_apoptosis_rate" ); // 0.0; 
+	
+	// // Set proliferation to 10% of other cells. 
+	// // Alter the transition rate from G0G1 state to S state
+	// NC_cell.phenotype.cycle.data.transition_rate(G0G1_index,S_index) *= 
+	// parameters.doubles( "NC_cell_relative_cycle_entry_rate" ); // 0.1; 
 		
 	/*
 	   This builds the map of cell definitions and summarizes the setup. 
