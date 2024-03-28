@@ -549,6 +549,7 @@ class Vis(QWidget):
                 break
             numChildren += 1
 
+        print('x,y,z,type,volume,cycle entry,custom:GFP,custom:sample')
         num_cells = 0
         #  print('------ search cells')
         for child in cells_parent:
@@ -592,6 +593,7 @@ class Vis(QWidget):
                 ylist.append(yval)
                 rlist.append(rval)
                 rgb_list.append(rgb)
+                print(f'{xval},{yval},0.0,cancer')
 
                 # For .svg files with cells that *have* a nucleus, there will be a 2nd
                 if (not self.show_nucleus):

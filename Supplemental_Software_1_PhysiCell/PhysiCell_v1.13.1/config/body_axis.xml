@@ -14,7 +14,7 @@
     </domain>
 
     <overall>
-        <max_time units="min">7200</max_time>
+        <max_time units="min">2160</max_time>
         <time_units>min</time_units>
         <space_units>micron</space_units>
         <dt_diffusion units="min">0.01</dt_diffusion>
@@ -86,10 +86,10 @@
             <phenotype>
                 <cycle code="6" name="Flow cytometry model (separated)">
                     <phase_durations units="min">
-                        <duration index="0" fixed_duration="false">300.0</duration>
-                        <duration index="1" fixed_duration="true">480</duration>
-                        <duration index="2" fixed_duration="true">240</duration>
-                        <duration index="3" fixed_duration="true">60</duration>
+                        <duration index="0" fixed_duration="false">298.50746</duration>
+                        <duration index="1" fixed_duration="false">480.76923</duration>
+                        <duration index="2" fixed_duration="false">239.80815</duration>
+                        <duration index="3" fixed_duration="false">59.88024</duration>
                     </phase_durations>
                 </cycle>
                 <death>
@@ -135,13 +135,13 @@
                     <relative_rupture_volume units="dimensionless">2.0</relative_rupture_volume>
                 </volume>
                 <mechanics>
-                    <cell_cell_adhesion_strength units="micron/min">0.02</cell_cell_adhesion_strength>
-                    <cell_cell_repulsion_strength units="micron/min">200.0</cell_cell_repulsion_strength>
+                    <cell_cell_adhesion_strength units="micron/min">0.4</cell_cell_adhesion_strength>
+                    <cell_cell_repulsion_strength units="micron/min">10.0</cell_cell_repulsion_strength>
                     <relative_maximum_adhesion_distance units="dimensionless">1.25</relative_maximum_adhesion_distance>
                     <cell_adhesion_affinities>
-                        <cell_adhesion_affinity name="PSM">1</cell_adhesion_affinity>
-                        <cell_adhesion_affinity name="Ecto">1</cell_adhesion_affinity>
-                        <cell_adhesion_affinity name="NC">1</cell_adhesion_affinity>
+                        <cell_adhesion_affinity name="PSM">1.0</cell_adhesion_affinity>
+                        <cell_adhesion_affinity name="Ecto">1.0</cell_adhesion_affinity>
+                        <cell_adhesion_affinity name="NC">1.0</cell_adhesion_affinity>
                     </cell_adhesion_affinities>
                     <options>
                         <set_relative_equilibrium_distance enabled="false" units="dimensionless">1.8</set_relative_equilibrium_distance>
@@ -152,7 +152,7 @@
                     <detachment_rate units="1/min">0.0</detachment_rate>
                 </mechanics>
                 <motility>
-                    <speed units="micron/min">1</speed>
+                    <speed units="micron/min">0.5</speed>
                     <persistence_time units="min">1</persistence_time>
                     <migration_bias units="dimensionless">0</migration_bias>
                     <options>
@@ -215,15 +215,15 @@
             <phenotype>
                 <cycle code="6" name="Flow cytometry model (separated)">
                     <phase_durations units="min">
-                        <duration index="0" fixed_duration="false">300.0</duration>
-                        <duration index="1" fixed_duration="true">480</duration>
-                        <duration index="2" fixed_duration="true">240</duration>
-                        <duration index="3" fixed_duration="true">60</duration>
+                        <duration index="0" fixed_duration="false">298.50746</duration>
+                        <duration index="1" fixed_duration="false">480.76923</duration>
+                        <duration index="2" fixed_duration="false">239.80815</duration>
+                        <duration index="3" fixed_duration="false">59.88024</duration>
                     </phase_durations>
                 </cycle>
                 <death>
                     <model code="100" name="apoptosis">
-                        <death_rate units="1/min">0</death_rate>
+                        <death_rate units="1/min">5.31667e-05</death_rate>
                         <phase_durations units="min">
                             <duration index="0" fixed_duration="true">516</duration>
                         </phase_durations>
@@ -264,13 +264,13 @@
                     <relative_rupture_volume units="dimensionless">2.0</relative_rupture_volume>
                 </volume>
                 <mechanics>
-                    <cell_cell_adhesion_strength units="micron/min">0.8</cell_cell_adhesion_strength>
+                    <cell_cell_adhesion_strength units="micron/min">0.4</cell_cell_adhesion_strength>
                     <cell_cell_repulsion_strength units="micron/min">10.0</cell_cell_repulsion_strength>
                     <relative_maximum_adhesion_distance units="dimensionless">1.25</relative_maximum_adhesion_distance>
                     <cell_adhesion_affinities>
-                        <cell_adhesion_affinity name="PSM">1</cell_adhesion_affinity>
-                        <cell_adhesion_affinity name="Ecto">1</cell_adhesion_affinity>
-                        <cell_adhesion_affinity name="NC">1</cell_adhesion_affinity>
+                        <cell_adhesion_affinity name="PSM">1.0</cell_adhesion_affinity>
+                        <cell_adhesion_affinity name="Ecto">1.0</cell_adhesion_affinity>
+                        <cell_adhesion_affinity name="NC">1.0</cell_adhesion_affinity>
                     </cell_adhesion_affinities>
                     <options>
                         <set_relative_equilibrium_distance enabled="false" units="dimensionless">1.8</set_relative_equilibrium_distance>
@@ -281,7 +281,7 @@
                     <detachment_rate units="1/min">0.0</detachment_rate>
                 </mechanics>
                 <motility>
-                    <speed units="micron/min">1</speed>
+                    <speed units="micron/min">0.5</speed>
                     <persistence_time units="min">1</persistence_time>
                     <migration_bias units="dimensionless">0</migration_bias>
                     <options>
@@ -344,15 +344,15 @@
             <phenotype>
                 <cycle code="6" name="Flow cytometry model (separated)">
                     <phase_durations units="min">
-                        <duration index="0" fixed_duration="false">300.0</duration>
-                        <duration index="1" fixed_duration="true">480</duration>
-                        <duration index="2" fixed_duration="true">240</duration>
-                        <duration index="3" fixed_duration="true">60</duration>
+                        <duration index="0" fixed_duration="false">298.50746</duration>
+                        <duration index="1" fixed_duration="false">480.76923</duration>
+                        <duration index="2" fixed_duration="false">239.80815</duration>
+                        <duration index="3" fixed_duration="false">59.88024</duration>
                     </phase_durations>
                 </cycle>
                 <death>
                     <model code="100" name="apoptosis">
-                        <death_rate units="1/min">0</death_rate>
+                        <death_rate units="1/min">5.31667e-05</death_rate>
                         <phase_durations units="min">
                             <duration index="0" fixed_duration="true">516</duration>
                         </phase_durations>
@@ -397,9 +397,9 @@
                     <cell_cell_repulsion_strength units="micron/min">10.0</cell_cell_repulsion_strength>
                     <relative_maximum_adhesion_distance units="dimensionless">1.25</relative_maximum_adhesion_distance>
                     <cell_adhesion_affinities>
-                        <cell_adhesion_affinity name="PSM">1</cell_adhesion_affinity>
-                        <cell_adhesion_affinity name="Ecto">1</cell_adhesion_affinity>
-                        <cell_adhesion_affinity name="NC">1</cell_adhesion_affinity>
+                        <cell_adhesion_affinity name="PSM">1.0</cell_adhesion_affinity>
+                        <cell_adhesion_affinity name="Ecto">1.0</cell_adhesion_affinity>
+                        <cell_adhesion_affinity name="NC">1.0</cell_adhesion_affinity>
                     </cell_adhesion_affinities>
                     <options>
                         <set_relative_equilibrium_distance enabled="false" units="dimensionless">1.8</set_relative_equilibrium_distance>
@@ -410,7 +410,7 @@
                     <detachment_rate units="1/min">0.0</detachment_rate>
                 </mechanics>
                 <motility>
-                    <speed units="micron/min">1</speed>
+                    <speed units="micron/min">0.5</speed>
                     <persistence_time units="min">1</persistence_time>
                     <migration_bias units="dimensionless">0</migration_bias>
                     <options>
@@ -472,17 +472,17 @@
     </cell_definitions>
 
     <initial_conditions>
-        <cell_positions type="csv" enabled="false">
+        <cell_positions type="csv" enabled="true">
             <folder>./config</folder>
-            <filename>cells.csv</filename>
+            <filename>body_cells.csv</filename>
         </cell_positions>
     </initial_conditions>
 
     <cell_rules>
         <rulesets>
-            <ruleset protocol="CBHG" version="2.0" format="csv" enabled="false">
+            <ruleset protocol="CBHG" version="2.0" format="csv" enabled="true">
                 <folder>./config</folder>
-                <filename>cell_rules.csv</filename>
+                <filename>body_rules.csv</filename>
             </ruleset>
         </rulesets>
         <settings />
@@ -490,7 +490,7 @@
 
     <user_parameters>
         <random_seed type="int" units="dimensionless" description="">0</random_seed>
-        <number_of_cells type="int" units="none" description="initial number of cells (for each cell type)">5</number_of_cells>
+        <number_of_cells type="int" units="none" description="initial number of cells (for each cell type)">0</number_of_cells>
         <NC_cell_migration_speed type="double" units="micron/min" description="">0.5</NC_cell_migration_speed>
         <NC_cell_relative_adhesion type="double" units="dimensionless" description="">5</NC_cell_relative_adhesion>
         <NC_cell_apoptosis_rate type="double" units="1/min" description="">0.0</NC_cell_apoptosis_rate>
@@ -499,7 +499,7 @@
         <base_cycle_entry_rate type="double" units="1/min" description="">0.00</base_cycle_entry_rate>
         <base_apoptosis_rate type="double" units="1/min" description="">0.00</base_apoptosis_rate>
         <base_cell_adhesion_distance type="double" units="dimensionless" description="">2.5</base_cell_adhesion_distance>
-        <include_NC_cell type="bool" units="dimensionless" description="">true</include_NC_cell>
+        <include_NC_cell type="bool" units="dimensionless" description="">false</include_NC_cell>
         <NC_cell_relative_repulsion type="double" units="dimensionless" description="">1</NC_cell_relative_repulsion>
         <motile_cell_migration_speed type="double" units="micron/min" description="">50</motile_cell_migration_speed>
         <motile_cell_relative_adhesion type="double" units="dimensionless" description="">0.05</motile_cell_relative_adhesion>
@@ -513,7 +513,7 @@
         <Ecto_cell_apoptosis_rate type="double" units="1/min" description="">0.0</Ecto_cell_apoptosis_rate>
         <Ecto_cell_relative_cycle_entry_rate type="double" units="dimensionless" description="">0.0</Ecto_cell_relative_cycle_entry_rate>
         <Ecto_color type="string" units="dimensionless" description="">rgba(255,255,0,0.1)</Ecto_color>
-        <include_Ecto_cell type="bool" units="dimensionless" description="">true</include_Ecto_cell>
+        <include_Ecto_cell type="bool" units="dimensionless" description="">false</include_Ecto_cell>
         <Ecto_cell_relative_repulsion type="double" units="dimensionless" description="">1</Ecto_cell_relative_repulsion>
     </user_parameters>
 </PhysiCell_settings>

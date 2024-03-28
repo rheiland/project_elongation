@@ -202,6 +202,8 @@ void setup_tissue( void )
 {
 	Cell* pC;
     Cell_Definition* pCD; 
+
+    std::cout << "-------------------- setup_tissue() -----------------\n";
 if( parameters.bools("include_NC_cell") == true )
 {
     	pCD = find_cell_definition( "NC"); 
@@ -214,6 +216,7 @@ for (int i=-24; i<-5; i++)
 		// pC = create_cell(NC_cell); 
 		pC = create_cell(*pCD); 
 		pC->assign_position( i*15, j*15, 0 );
+        std::cout << i*15<<","<<j*15<< ",0.0,NC\n";
 		}
 	}
 }
@@ -226,6 +229,7 @@ for (int i=-5; i<5; i++)
 		{
 		pC = create_cell(*pCD); 
 		pC->assign_position( i*15, j*15, 0 );
+        std::cout << i*15<<","<<j*15<< ",0.0,NC\n";
 		}
 	}
 }
@@ -386,6 +390,7 @@ if( parameters.bools("include_Ecto_cell") == true )
 		{
 		pC = create_cell(*pCD); 
 		pC->assign_position( i*15, j*15, 0 );
+        std::cout << i*15<<","<<j*15<< ",0.0,Ecto\n";
 		}
 	}
 	}
@@ -397,6 +402,7 @@ if( parameters.bools("include_Ecto_cell") == true )
 		{
 		pC = create_cell(*pCD); 
 		pC->assign_position( i*15, j*15, 0 );
+        std::cout << i*15<<","<<j*15<< ",0.0,Ecto\n";
 		}
 	}
 	}
@@ -410,6 +416,7 @@ if( parameters.bools("include_Ecto_cell") == true )
 		{
 		pC = create_cell(*pCD); 
 		pC->assign_position( i*15, j*15, 0 );
+        std::cout << i*15<<","<<j*15<< ",0.0,Ecto\n";
 		}
 	}
 	}
@@ -421,6 +428,7 @@ if( parameters.bools("include_Ecto_cell") == true )
 		{
 		pC = create_cell(*pCD); 
 		pC->assign_position( i*15, j*15, 0 );
+        std::cout << i*15<<","<<j*15<< ",0.0,Ecto\n";
 		}
 	}
 	}
@@ -432,6 +440,7 @@ if( parameters.bools("include_Ecto_cell") == true )
 		{
 		pC = create_cell(*pCD); 
 		pC->assign_position( i*15, j*15, 0 );
+        std::cout << i*15<<","<<j*15<< ",0.0,Ecto\n";
 		}
 	}
 	}
@@ -442,6 +451,7 @@ if( parameters.bools("include_Ecto_cell") == true )
 		{
 		pC = create_cell(*pCD); 
 		pC->assign_position( i*15, j*15, 0 );
+        std::cout << i*15<<","<<j*15<< ",0.0,Ecto\n";
 		}
 	}
 	}
@@ -455,6 +465,7 @@ if( parameters.bools("include_Ecto_cell") == true )
 		{
 		pC = create_cell(*pCD); 
 		pC->assign_position( i*15, j*15, 0 );
+        std::cout << i*15<<","<<j*15<< ",0.0,Ecto\n";
 		}
 	}
 	}
@@ -466,6 +477,7 @@ if( parameters.bools("include_Ecto_cell") == true )
 		{
 		pC = create_cell(*pCD); 
 		pC->assign_position( i*15, j*15, 0 );
+        std::cout << i*15<<","<<j*15<< ",0.0,Ecto\n";
 		}
 	}
 	}
@@ -476,6 +488,7 @@ if( parameters.bools("include_Ecto_cell") == true )
 		{
 		pC = create_cell(*pCD); 
 		pC->assign_position( i*15, j*15, 0 );
+        std::cout << i*15<<","<<j*15<< ",0.0,Ecto\n";
 		}
 	}
 	}
@@ -486,6 +499,7 @@ if( parameters.bools("include_Ecto_cell") == true )
 		{
 		pC = create_cell(*pCD); 
 		pC->assign_position( i*15, j*15, 0 );
+        std::cout << i*15<<","<<j*15<< ",0.0,Ecto\n";
 		}
 	}
 	}
@@ -498,6 +512,7 @@ if( parameters.bools("include_Ecto_cell") == true )
 		{
 		pC = create_cell(*pCD); 
 		pC->assign_position( i*15, j*15, 0 );
+        std::cout << i*15<<","<<j*15<< ",0.0,Ecto\n";
 		}
 	}
 	}
@@ -511,6 +526,7 @@ if( parameters.bools("include_Ecto_cell") == true )
 		{
 		pC = create_cell(*pCD); 
 		pC->assign_position( i*15, j*15, 0 );
+        std::cout << i*15<<","<<j*15<< ",0.0,Ecto\n";
 		}
 	}
 	}
@@ -522,6 +538,7 @@ if( parameters.bools("include_Ecto_cell") == true )
 		{
 		pC = create_cell(*pCD); 
 		pC->assign_position( i*15, j*15, 0 );
+        std::cout << i*15<<","<<j*15<< ",0.0,Ecto\n";
 		}
 	}
 	}
